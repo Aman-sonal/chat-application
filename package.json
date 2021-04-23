@@ -1,0 +1,27 @@
+{
+  "name": "chat-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aman-sonal/chat-application.git"
+  },
+  "author": "\"Aman Sonal\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aman-sonal/chat-application/issues"
+  },
+  "homepage": "https://github.com/Aman-sonal/chat-application#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
