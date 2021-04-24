@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat application</title>
     <link rel="stylesheet" href="/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <section class="chat_section">
         <div class="brand">
-            <img src="">
-            <h1>Wassup</h1> 
+           <img height="50px" src="data:image/png;base64,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">
+            <h1>Mingle</h1> 
         </div>
-        <div class="message_area">
-        </div>
+        <div class="message_area"></div>
         <div>
             <textarea id="textarea" cols="30" rows="1" placeholder="Write a msg"></textarea>
         </div>

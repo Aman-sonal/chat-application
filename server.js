@@ -18,9 +18,9 @@ app.get('/', (req, res) =>{
 //sockets setup
 const io= require('socket.io')(http);
 
-io.on('connection' ,(sock) =>{ // gets called whenever a client is connected to a browser.
+io.on('connection' ,(socket) =>{ // gets called whenever a client is connected to a browser.
     console.log('Connected...');
-    sock.on('message', (msg) =>{
-        console.log("hello");
-    })
-})
+    socket.on('message', (msg) =>{
+        socket.broadcast.emit('message', msg);
+    });
+});
